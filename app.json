@@ -1,0 +1,43 @@
+{
+    "name": "ApexCaptionBot-V1",
+    "description": "Apex Caption BoT @Apexroombkp",
+    "logo": "https://telegra.ph/file/a870a2b909e8eb3ff9f22.jpg",
+    "keywords": [
+        "Private",
+        "Auto",
+        "Caption",
+        "Bot"
+    ],
+    "website": "https://t.me/Apexroombkp",
+    "repository": "https://github.com/",
+    "success_url": "https://t.me/Apexroombkp",
+    "env": {
+        "app_id": {
+            "description": "Your APP ID From my.telegram.org",
+            "value": ""
+        },
+        "api_hash": {
+            "description": "Your API Hash From my.telegram.org",
+            "value": ""
+        },
+        "bot_token": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""        
+        },
+        "custom_caption": {
+            "description": "Caption Text.  use {file_name} to get original file name",
+            "required": false       
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
